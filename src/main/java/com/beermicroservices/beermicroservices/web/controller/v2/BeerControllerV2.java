@@ -1,4 +1,4 @@
-package com.beermicroservices.beermicroservices.web.controller;
+package com.beermicroservices.beermicroservices.web.controller.v2;
 
 import com.beermicroservices.beermicroservices.model.BeerDto;
 import com.beermicroservices.beermicroservices.web.services.BeerService;
@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-@RequestMapping("/api/v1/beer")
+@RequestMapping("/api/v2/beer")
 @RestController
-public class BeerController {
+public class BeerControllerV2 {
 
     private final BeerService beerService;
 
-    public BeerController(BeerService beerService)
+    public BeerControllerV2(BeerService beerService)
     {
         this.beerService = beerService;
     }

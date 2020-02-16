@@ -1,10 +1,10 @@
-package com.beermicroservices.beermicroservices.web.services;
+package com.beermicroservices.beermicroservices.web.services.v2;
 
 import com.beermicroservices.beermicroservices.model.BeerDto;
 
 import java.util.UUID;
 
-public interface BeerService {
+public interface BeerServiceV2 {
     BeerDto getBeerById(UUID beerId);
 
     BeerDto saveNewBeer(BeerDto beerDtoV2);
